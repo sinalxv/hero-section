@@ -48,6 +48,9 @@ body, .hero, .hero-text, .hero-btn {
     height: auto; /* Keep image aspect ratio */
     border: 4px solid #000; /* Add black border around image */
     border-radius: 1rem; /* Slightly round image corners */
+    /* محو کردن لبه‌ها با ماسک گرادینت */
+    -webkit-mask-image: radial-gradient(circle, #000 80%, transparent 100%);
+    mask-image: radial-gradient(circle, #000 80%, transparent 100%);
 }
 
 .hero-btn{
@@ -103,6 +106,21 @@ body, .hero, .hero-text, .hero-btn {
         opacity: 0; /* Hide bubble */
     }
 }
+.hero-text h1 {
+        font-size: 2rem; /* اندازه عنوان */
+        margin-bottom: 1rem; /* فاصله پایین عنوان */
+        background: linear-gradient(90deg, #00ff00, #ffff00, #0077ff) !important; /* گرادینت سبز، زرد، آبی */
+        -webkit-background-clip: text !important; /* برای مرورگرهای WebKit */
+        -webkit-text-fill-color: transparent !important; /* برای مرورگرهای WebKit */
+        background-clip: text !important; /* برای سایر مرورگرها */
+        color: transparent !important; /* مخفی کردن رنگ پیش‌فرض متن */
+    }
+.hero-text p{
+        font-size: 1.125rem; /* Set paragraph size */
+        margin-bottom: 2rem; /* Space below paragraph */
+        color: #555; /* Set paragraph color */
+        line-height: 1.8; /* Improve readability */
+    }
 
 @media (max-width: 768px){
     .hero{
@@ -122,15 +140,6 @@ body, .hero, .hero-text, .hero-btn {
         align-items: center; /* Center text in flex container */
     }
 
-    .hero-text h1{
-        font-size: 2rem; /* Reduce heading size */
-        margin-bottom: 1rem; /* Space below heading */
-        color: #222; /* Set heading color */
-    }
-    .hero-text p{
-        font-size: 1.125rem; /* Set paragraph size */
-        margin-bottom: 2rem; /* Space below paragraph */
-        color: #555; /* Set paragraph color */
-        line-height: 1.8; /* Improve readability */
-    }
+
+
 }
