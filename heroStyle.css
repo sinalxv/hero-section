@@ -108,7 +108,7 @@ body, .hero, .hero-text, .hero-btn {
 .hero-text h1 {
         font-size: 2rem; /* اندازه عنوان */
         margin-bottom: 1rem; /* فاصله پایین عنوان */
-        background: linear-gradient(90deg, #00ff00, #ffff00, #0077ff) !important; /* گرادینت سبز، زرد، آبی */
+        background: linear-gradient(90deg, #00ff00, #fd77f2, #0077ff) !important; /* گرادینت سبز، زرد، آبی */
         -webkit-background-clip: text !important; /* برای مرورگرهای WebKit */
         -webkit-text-fill-color: transparent !important; /* برای مرورگرهای WebKit */
         background-clip: text !important; /* برای سایر مرورگرها */
